@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css" type="text/css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Show Steward</title>
+  <link rel="stylesheet" href="styles/style.css" type="text/css">
 </head>
 <body>
-    <div class="bg-image"></div>
-    <div class="home">
-        <div class="header">
-          <h1 id="heading">The Show Steward</h1>
-          <form>
-          <input type="text" id="searchMovie" placeholder="Enter a Tv Show name">   
-          <input type="submit" id="submit" value="Search">   
-          <!--<button id="submit">Search</button> -->
-          </form> 
+  <div id="main">
+    <div id="main-heading">
+      <h1>The Show Steward</h1>
+      <div id="nav-bar">
+        <div id="watchlist">
+            <h3>Watchlist</h3>
+            <ul id="listWatch">
+            </ul>
         </div>
-        <div class="container">
-        
-        </div> 
-        <div class="watch">
-            <button class="watchlist">Watchlist &#8711;</button>
-        </div> 
+        <div id="rated">
+            <h3>Rated</h3>
+            <ul id="ratedList">
+            </ul>
+        </div>
+      </div>
     </div>
+    <div id="search">
+      <form action="#" id="search-form">
+        <input type="text" id="movie-name" placeholder="Enter a show to search">
+        <input type="submit" value="Search" id="searchMovie">
+      </form>
+    </div>
+    <div id="container">
+      <div id="image-container">
+      </div>
+      <h3 id="show-name"></h3>
+      <p id="summary"></p>
+      <button id="addWatchlist">Add to watchlist</button>
+      <button id="like">Like</button>
+    </div>
+    <div id="add-a-show">
+        <h3>Add a show</h3>
+      <form action="#" id="show-form">
+        <label for="showName">Show Name</label><br>
+        <input type="text" class="show-name"><br>
+        <label for="coverImage">Image</label><br>
+        <input type="text" class="cover-image"><br>
+        <label for="description">Summary</label><br>
+        <input type="text" class="description"><br><br>
+        <input type="submit" value="Submit" class="submit">
+      </form>
+    </div>
+  </div>
   <script src="src/index.js"></script>
 </body>
 </html>
